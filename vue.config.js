@@ -10,7 +10,8 @@ module.exports = defineConfig({
         '@v': path.resolve(__dirname, 'src/views'),
         '@a': path.resolve(__dirname, 'src/assets'),
         '@u': path.resolve(__dirname, 'src/utils'),
-        '@h': path.resolve(__dirname, 'src/hooks')
+        '@h': path.resolve(__dirname, 'src/hooks'),
+        '@s': path.resolve(__dirname, 'src/services')
       }
     }
   }
