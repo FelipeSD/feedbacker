@@ -16,6 +16,7 @@
               text-white
               focus:outline-none
             "
+            @click="() => emit('create-account')"
           >
             Crie uma conta
           </button>
@@ -29,6 +30,7 @@
               text-brand-main
               focus:outline-none
             "
+            @click="() => emit('login')"
           >
             Entrar
           </button>
@@ -66,7 +68,15 @@
   </header>
 </template>
 
-<script></script>
+<script>
+export default {
+  setup (_, { emit }) {
+    return {
+      emit
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .header {
