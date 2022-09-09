@@ -1,11 +1,10 @@
 export function validateEmptyAndLength3 (value) {
   if (!value) {
-    return ['* Campo obrigatório'];
+    return '* Campo obrigatório';
   }
 
   if (value.length < 3) {
-    console.log(value.length);
-    return ['* O campo deve ter no mínimo 3 caracteres'];
+    return '* O campo deve ter no mínimo 3 caracteres';
   }
 
   return true;
@@ -13,11 +12,10 @@ export function validateEmptyAndLength3 (value) {
 
 export function validateEmptyAndEmail (value) {
   if (!value) {
-    console.log('value', value);
     return '* Campo obrigatório';
   }
 
-  const isValid = value.match(/^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i);
+  const isValid = (/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/i).test(value);
 
   if (!isValid) {
     return '* Email inválido';
