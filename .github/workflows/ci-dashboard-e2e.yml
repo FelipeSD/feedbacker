@@ -33,6 +33,6 @@ jobs:
       - name: Run tests
         uses: cypress-io/github-action@v2
         with:	
-          working-directory: widget
+          working-directory: dashboard
           browser: chrome
           headless: true
