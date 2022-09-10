@@ -1,4 +1,4 @@
-import useStore from '@h/useStore';
+import useStore from '../hooks/useStore';
 import { setCurrentUser, resetUserStore, setApiKey, clearCurrentUser } from './user';
 
 describe('UserStore', () => {
