@@ -7,7 +7,7 @@ exports[`<HeaderLogged /> should render header logged correctly 1`] = `
     <ul class="flex list-none">
       <li class="px-6 py-2 mr-2 font-bold text-white rounded-full cursor-pointer focus:outline-none"> Credenciais </li>
       <li class="px-6 py-2 mr-2 font-bold text-white rounded-full cursor-pointer focus:outline-none"> Feedback </li>
-      <li id="logout-button" class="px-6 py-2 font-bold bg-white rounded-full cursor-pointer text-brand-main focus:outline-none">...</li>
+      <li id="header-logout-button" class="px-6 py-2 font-bold bg-white rounded-full cursor-pointer text-brand-main focus:outline-none">...</li>
     </ul>
   </div>
 </div>

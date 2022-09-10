@@ -8,6 +8,7 @@
 
         <div class="flex">
           <button
+            id="header-create-account"
             class="
               px-6
               py-2
@@ -21,6 +22,7 @@
             Crie uma conta
           </button>
           <button
+            id="header-login-button"
             class="
               px-6
               py-2
@@ -51,6 +53,7 @@
       </div>
       <div class="mt-10">
         <button
+          id="cta-create-account"
           class="
             px-6
             py-2
@@ -60,6 +63,7 @@
             text-brand-main
             focus:outline-none
           "
+          @click="() => emit('create-account')"
         >
           Crie uma conta grátis
         </button>

@@ -36,7 +36,7 @@ describe('<HeaderLogged />', () => {
       }
     });
 
-    const buttonLogout = wrapper.find('#logout-button');
+    const buttonLogout = wrapper.find('#header-logout-button');
     expect(buttonLogout.text()).toBe('...');
   });
 
@@ -52,7 +52,7 @@ describe('<HeaderLogged />', () => {
       }
     });
 
-    const buttonLogout = wrapper.find('#logout-button');
+    const buttonLogout = wrapper.find('#header-logout-button');
     expect(buttonLogout.text()).toContain('name');
   });
 });

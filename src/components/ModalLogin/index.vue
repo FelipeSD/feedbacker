@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between" id="modal-login">
     <h1 class="text-4xl font-black text-gray-800">Entre na sua conta</h1>
     <button class="text-4xl text-gray-600" @click="close">&times;</button>
   </div>
@@ -9,6 +9,7 @@
       <label class="block">
         <span class="text-lg font-medium text-gray-800">E-mail</span>
         <input
+          id="email-field"
           class="
             w-full
             px-4
@@ -29,6 +30,7 @@
         />
         <span
           v-if="!!state.email.errorMesssage"
+          id="email-error"
           class="block font-medium text-brand-danger"
           >{{ state.email.errorMesssage }}</span
         >
@@ -37,6 +39,7 @@
       <label class="block mt-9">
         <span class="text-lg font-medium text-gray-800">Senha</span>
         <input
+          id="password-field"
           class="
             w-full
             px-4
@@ -65,6 +68,7 @@
       <button
         :disabled="state.isLoading"
         :class="{ 'opacity-50': state.isLoading }"
+        id="submit-button"
         class="
           px-8
           py-3

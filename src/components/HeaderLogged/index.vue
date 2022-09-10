@@ -37,7 +37,7 @@
           Feedback
         </li>
         <li
-          id="logout-button"
+          id="header-header-logout-button"
           class="
             px-6
             py-2
