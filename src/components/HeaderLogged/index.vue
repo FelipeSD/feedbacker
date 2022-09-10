@@ -37,6 +37,7 @@
           Feedback
         </li>
         <li
+          id="logout-button"
           class="
             px-6
             py-2
@@ -64,12 +65,12 @@ import { clearCurrentUser } from '@st/user';
 export default {
   setup () {
     const router = useRouter();
-    const store = useStore();
+    const store = useStore('User');
     const logoutLabel = computed(() => {
-      if (!store.User.currentUser.name) {
+      if (!store.currentUser.name) {
         return '...';
       }
-      return `${store.User.currentUser.name} (sair)`;
+      return `${store.currentUser.name} (sair)`;
     });
 
     function handleLogout () {
