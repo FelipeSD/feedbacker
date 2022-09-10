@@ -1,4 +1,4 @@
-name: Widget e2e testing
+name: Dashboard e2e testing
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
   cypress:
     defaults:
       run:
-        working-directory: widget
+        working-directory: dashboard
 
     runs-on: ubuntu-latest
     timeout-minutes: 15
